@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        /* === General Reset === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* === Header Section === */
+        header {
+            background: linear-gradient(135deg, #ff4b4b, #d10000);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* === Container === */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #d10000;
+            margin-bottom: 15px;
+            border-left: 4px solid #ff4b4b;
+            padding-left: 10px;
+        }
+
+        /* === About Section === */
+        .about p {
+            font-size: 1.1rem;
+        }
+
+     
+        .skills ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .skills li {
+            background: #ff4b4b;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .skills li:hover {
+            transform: translateY(-3px);
+            background: #d10000;
+        }
+        .experience .job {
+            margin-bottom: 20px;
+        }
+
+        .job h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .job p {
+            color: #555;
+        }
+        .contact p {
+            font-size: 1.1rem;
+        }
+
+        .sub {
+            background: linear-gradient(135deg, #ff4b4b, #d10000);
+            color: #fff;
+            padding: 12px 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .sub:hover {
+            background: linear-gradient(135deg, #ff3030, #a00000);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+
+        .sub:active {
+            transform: scale(0.97);
+            background: linear-gradient(135deg, #800000, #400000);
+            opacity: 0.85;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sothun Rachhy</h1>
+        <p>Front-End Developer | Web Designer | Student-2<sup>nd</sup> Years</p>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate front-end developer with a love for clean, modern web design.
+               I enjoy turning ideas into responsive, interactive, and user-friendly websites.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Git & GitHub</li>
+                <li>UI Design</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Web Developer Intern - ABC Tech</h3>
+                <p>Worked on responsive design, improving site speed, and implementing modern UI components.</p>
+            </div>
+            <div class="job">
+                <h3>Freelance Projects</h3>
+                <p>Built portfolio sites and landing pages for small businesses using HTML, CSS, and JavaScript.</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Email: rachhy712@gmail.com</p>
+            <p>Phone: 097 4666 259</p>
+            <button class="sub">Download Resume</button>
+        </section>
+    </div>
+
+</body>
+</html>
